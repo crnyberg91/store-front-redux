@@ -4,7 +4,7 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import NavbarPage from './components/NavBar/navbar';
 import LandingPage from './pages/LandingPage/landingPage';
-// import './App.css';
+
 function App() {
   return (
     <>

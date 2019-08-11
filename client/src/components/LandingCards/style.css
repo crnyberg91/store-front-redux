@@ -1,0 +1,9 @@
+.cardRow{
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-right: 0px;
+}
