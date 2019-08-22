@@ -20,6 +20,6 @@
   "homepage": "https://github.com/crnyberg91/store-front-redux#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.6.4"
+    "mongoose": "^5.6.10"
   }
 }
