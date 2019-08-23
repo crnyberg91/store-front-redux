@@ -21,6 +21,9 @@ const UserSchema = new Schema({
         trim: true,
         required: "password is Required",
         type: String
+    },
+    isManager: {
+        type: Boolean
     }
 });
 
