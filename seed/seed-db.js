@@ -13,6 +13,17 @@ const retailSeed = [
         category: 'feet',
         quantity: 5,
         price: 15,
-        img: 'asdf'
+        img: 'boots.jpg'
     }
-]
+];
+
+const RentalSeed = [
+    {
+        name: 'Burton Board',
+        category: 'board',
+        quantity: 3,
+        price: 20,
+        img: 'board.jpg',
+        available: true
+    }
+];
