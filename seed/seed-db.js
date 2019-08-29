@@ -17,7 +17,7 @@ const retailSeed = [
     }
 ];
 
-const RentalSeed = [
+const rentalSeed = [
     {
         name: 'Burton Board',
         category: 'board',
@@ -27,3 +27,31 @@ const RentalSeed = [
         available: true
     }
 ];
+
+
+db.Retail
+    .remove({})
+    .then(() => db.Retail.collection.insertMany(retailSeed))
+    .then(data => {
+        console.log(data.result.n + " retail products inserted!");
+        console.log("db.Retail data: " + data)
+        process.exit(0);
+    })
+    .catch(err => {
+        console.error(err);
+        process.exit(1);
+    });
+
+db.Rental
+    .remove({})
+    .then(() => db.Rental.collection.insertMany(rentalSeed))
+    .then(data => {
+        console.log(data.result.n + " rental products inserted!");
+        console.log("db.Rental data: " + data)
+        process.exit(0);
+    })
+    .catch(err => {
+        console.error(err);
+        process.exit(1);
+    });
+
