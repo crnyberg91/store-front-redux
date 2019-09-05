@@ -4,13 +4,13 @@ const mongoose = require("mongoose");
 
 // const bodyparser = require("body-parser");
 // const cors = require("cors");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/virtuviodb", { useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/storefrontdb", { useNewUrlParser: true});
 
 const connection = mongoose.connection;
 
@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Define API routes here
-require("./routes/api-routes")(app);
+// require("./routes/api-routes")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.get('*', function (req, res) {
