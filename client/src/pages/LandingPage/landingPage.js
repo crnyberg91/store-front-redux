@@ -9,7 +9,6 @@ function LandingPage() {
         <>
             <Jumbotron />
             <LandingCards />
-            <Footer />
         </>
     )
 }

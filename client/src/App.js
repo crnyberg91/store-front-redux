@@ -8,6 +8,7 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import NavbarPage from './components/NavBar/navbar';
 import LandingPage from './pages/LandingPage/landingPage';
+import Footer from './components/Footer/footer';
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
       <>
         <NavbarPage />
         <LandingPage />
+        <Footer />
         <input onChange={this.onUpdateUser} />
         {this.props.user}
       </>
