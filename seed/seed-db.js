@@ -9,12 +9,41 @@ mongoose.connect(
 
 const retailSeed = [
     {
-        name: 'some boots',
-        category: 'feet',
+        name: 'Burton Snowboard Boots',
+        category: 'footware',
         quantity: 5,
-        price: 15,
+        price: 300,
         img: 'boots.jpg'
+    },
+    {
+        name: 'Salamon Ski Boots',
+        category: 'footware',
+        quantity: 11,
+        price: 450,
+        img: 'boots.jpg'
+    },
+    {
+        name: 'Thirtytwo Snowboard Boots',
+        category: 'footware',
+        quantity: 5,
+        price: 240,
+        img: 'boots.jpg'
+    },
+    {
+        name: 'Burton Board',
+        category: 'snowboard',
+        quantity: 5,
+        price: 500,
+        img: 'board.jpg'
+    },
+    {
+        name: 'Bataleon Board',
+        category: 'snowboard',
+        quantity: 4,
+        price: 340,
+        img: 'bataleon.jpg'
     }
+
 ];
 
 const rentalSeed = [
